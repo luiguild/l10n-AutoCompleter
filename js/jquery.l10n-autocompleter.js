@@ -31,7 +31,7 @@ if (l10nID.length > 0) {
       l10nRef = $(l10nID[i]).attr(l10nAttribute);
 
       if(concatenateRef != undefined){
-        $(l10nID[i]).append($("<span data-l10n-id='" + l10nRef + "'></span> / <span data-l10n-id='" + concatenateRef + "'></span>")).removeAttr(l10nAttribute).removeAttr(l10nConcatenate);
+        $(l10nID[i]).append($("<span data-l10n-id='" + l10nRef + "'></span> <span data-l10n-id='" + concatenateRef + "'></span>")).removeAttr(l10nAttribute).removeAttr(l10nConcatenate);
       }
       else {
         $(l10nID[i]).append($("<span data-l10n-id='" + l10nRef + "'></span>")).removeAttr(l10nAttribute);
